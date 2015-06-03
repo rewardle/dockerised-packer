@@ -32,7 +32,6 @@ USER packer
 
 # Add my required config files
 WORKDIR /app
-ADD packer /app/packer
 
 # Suggested running: docker run -it -e AWS_SECRET_KEY -e AWS_
 ENTRYPOINT ["/usr/local/packer/packer"]
