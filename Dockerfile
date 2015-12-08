@@ -20,8 +20,8 @@ RUN go get -u github.com/mitchellh/gox
 # Install packer
 RUN mkdir -p /usr/local/packer \
     && cd /usr/local/packer \
-    && curl -O -L https://dl.bintray.com/mitchellh/packer/packer_0.7.5_linux_amd64.zip \
-    && unzip packer_0.7.5_linux_amd64.zip \
+    && curl -O -L https://releases.hashicorp.com/packer/0.8.6/packer_0.8.6_linux_amd64.zip \
+    && unzip packer_0.8.6_linux_amd64.zip \
     && curl -O -L https://github.com/packer-community/packer-windows-plugins/releases/download/v1.0.0/linux_amd64.zip \
     && unzip linux_amd64.zip
 
